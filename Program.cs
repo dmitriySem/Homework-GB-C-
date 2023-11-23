@@ -31,11 +31,11 @@ int X = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите координату Y точки: ");
 int Y = int.Parse(Console.ReadLine()!);
 
-if((X>0) & (Y>0))
+if((X>=0) & (Y>=0))
 Console.WriteLine($"Точка с координатами ({X},{Y}) находится в 1-й четверте");
-if((X<0) & (Y>0))
+if((X<=0) & (Y>=0))
 Console.WriteLine($"Точка с координатами ({X},{Y}) находится в 2-й четверте");
-if((X<0) & (Y<0))
+if((X<=0) & (Y<=0))
 Console.WriteLine($"Точка с координатами ({X},{Y}) находится в 3-й четверте");
-if((X>0) & (Y<0))
+if((X>=0) & (Y<=0))
 Console.WriteLine($"Точка с координатами ({X},{Y}) находится в 4-й четверте");
